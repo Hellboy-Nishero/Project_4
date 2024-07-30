@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding-top: 17px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #F4F9E2;
+  font-family: "ABeeZee", sans-serif;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 69px;
+}
+header nav ul li a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15.72px;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+header nav ul li .active::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: #000;
+  height: 1px;
+}
+header nav button {
+  background-color: #F9B640;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+header .header-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 51px;
+  padding-bottom: 86px;
+}
+header .header-content .header-left-side-content {
+  margin-left: 156px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .header-content .header-left-side-content h2 {
+  width: 610px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 48px;
+  line-height: 53.9px;
+  letter-spacing: -0.035rem;
+  margin-bottom: 46px;
+  color: #22356F;
+}
+header .header-content .header-left-side-content p {
+  width: 602px;
+  font-size: 24px;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 42.55px;
+  color: #22356F;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #62D0DF;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+main .main-left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 171px;
+}
+main .main-left-side .main-left-side-content {
+  width: 586px;
+  color: #fff;
+}
+main .main-left-side .main-left-side-content h2 {
+  margin-bottom: 27px;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 27.66px;
+  letter-spacing: -0.006em;
+}
+main .main-left-side .main-left-side-content p {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 35.46px;
+  text-align: justify;
+}
+main .main-right-side img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.promo-part {
+  max-width: 1440px;
+  margin: 251.58px auto 137.96px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.promo-part pre {
+  width: 739px;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 34.04px;
+  letter-spacing: 0.005em;
+  text-align: left;
+}
+
+.offer-list {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.offer-list .offers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 480px;
+}
+.offer-list .offers .offer {
+  width: 480px;
+  padding: 126px 0 0 70px;
+  position: relative;
+}
+.offer-list .offers .offer::before {
+  content: "";
+  position: absolute;
+  top: 96px;
+  transform: translateX(-50%);
+  left: 50%;
+  height: 1px;
+  background-color: #FFF;
+  width: 80%;
+}
+.offer-list .offers .offer h3 {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 34.04px;
+  letter-spacing: -0.006rem;
+  color: #fff;
+}
+.offer-list .offers .offer h3 a {
+  text-decoration: none;
+  color: #fff;
+}
+.offer-list .offers .offer:first-child {
+  background-color: #22356F;
+}
+.offer-list .offers .offer:nth-child(2) {
+  background-color: #0052C1;
+}
+.offer-list .offers .offer:last-child {
+  background-color: #76B58B;
+}
+
+.rent-bike {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin: 0 auto;
+}
+.rent-bike .rent-left-side {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.rent-bike .rent-right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rent-bike .rent-right-side .rent-right-side-content {
+  width: 676px;
+  color: #22356F;
+}
+.rent-bike .rent-right-side .rent-right-side-content h3 {
+  margin-bottom: 49px;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 27.66px;
+  letter-spacing: -0.006rem;
+}
+.rent-bike .rent-right-side .rent-right-side-content p {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 53.19px;
+  letter-spacing: -0.01rem;
+}/*# sourceMappingURL=style.css.map */
